@@ -1,17 +1,18 @@
-import { test, expect } from '@playwright/test'
+import {test, expect} from '@playwright/test'
 
-test('opens sidebar and nested popover', async ({ page }) => {
-  await page.goto('/')
+test('opens sidebar and nested popover', async ({page}) => {
+    await page.setViewportSize({width: 1280, height: 500});
+    await page.goto('/')
 
-  await page.getByRole('button', { name: 'Open Sidebar' }).click()
+    await page.getByRole('button', {name: 'Open Sidebar'}).click()
 
-  const nestedTrigger = page.getByRole('button', { name: 'Open anchored popover' })
-  await expect(nestedTrigger).toBeVisible()
+    const nestedTrigger = page.getByRole('button', {name: 'Open anchored popover'})
+    await expect(nestedTrigger).toBeVisible()
 
-  await nestedTrigger.click()
+    await nestedTrigger.click()
 
-  const helloButton = page.getByRole('button', { name: 'Hello 5' })
-  await expect(helloButton).toBeVisible()
+    const helloButton = page.getByRole('button', {name: 'Hello 5'})
+    await expect(helloButton).toBeVisible()
 
-  await helloButton.click()
+    await helloButton.click()
 })
