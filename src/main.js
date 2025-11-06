@@ -50,6 +50,17 @@ app.innerHTML = `
           auctor lorem non neque luctus lacinia. Phasellus feugiat mauris non ligula
           iaculis bibendum.
         </p>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          curae; Vivamus vitae quam vitae sapien malesuada auctor et a ante. Integer
+          gravida pretium enim, sed congue magna hendrerit id. Nullam eget dui ut nisi
+          feugiat aliquet.
+        </p>
+        <p>
+          Curabitur ultrices erat id nisi imperdiet, a volutpat justo elementum. Fusce
+          auctor lorem non neque luctus lacinia. Phasellus feugiat mauris non ligula
+          iaculis bibendum.
+        </p>
 
         <div class="sidebar-spacer" aria-hidden="true"></div>
 
@@ -68,8 +79,35 @@ app.innerHTML = `
           class="nested-popover"
           popover="auto"
         >
-          <button type="button" class="hello-button">Hello</button>
+          <button type="button" class="hello-button">Hello 1</button>
+          <button type="button" class="hello-button">Hello 2</button>
+          <button type="button" class="hello-button">Hello 3</button>
+          <button type="button" class="hello-button">Hello 4</button>
+          <button type="button" class="hello-button">Hello 5</button>
         </div>
+        <div class="sidebar-spacer" aria-hidden="true"></div>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          curae; Vivamus vitae quam vitae sapien malesuada auctor et a ante. Integer
+          gravida pretium enim, sed congue magna hendrerit id. Nullam eget dui ut nisi
+          feugiat aliquet.
+        </p>
+        <p>
+          Curabitur ultrices erat id nisi imperdiet, a volutpat justo elementum. Fusce
+          auctor lorem non neque luctus lacinia. Phasellus feugiat mauris non ligula
+          iaculis bibendum.
+        </p>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          curae; Vivamus vitae quam vitae sapien malesuada auctor et a ante. Integer
+          gravida pretium enim, sed congue magna hendrerit id. Nullam eget dui ut nisi
+          feugiat aliquet.
+        </p>
+        <p>
+          Curabitur ultrices erat id nisi imperdiet, a volutpat justo elementum. Fusce
+          auctor lorem non neque luctus lacinia. Phasellus feugiat mauris non ligula
+          iaculis bibendum.
+        </p>
       </div>
     </div>
   </main>
