@@ -14,5 +14,7 @@ test('opens sidebar and nested popover', async ({page}) => {
     const helloButton = page.getByRole('button', {name: 'Hello 5'})
     await expect(helloButton).toBeVisible()
 
+    // await helloButton.scrollIntoViewIfNeeded(); // <-- this doesn't do anything either
+
     await helloButton.click()
 })
