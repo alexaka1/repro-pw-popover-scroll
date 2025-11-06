@@ -21,8 +21,8 @@ app.innerHTML = `
       </button>
     </section>
 
-    <div id="sidebar-popover" popover="auto" class="sidebar-popover">
-      <div class="sidebar-inner">
+    <div id="sidebar-popover" popover="auto" class="sidebar-popover" aria-label="sidebar">
+      <div data-testid="scroll-container" class="sidebar-inner">
         <h2>Sidebar Details</h2>
         <p>
           This sidebar popover is intentionally packed with content so it extends beyond

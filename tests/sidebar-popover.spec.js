@@ -18,3 +18,23 @@ test('opens sidebar and nested popover', async ({page}) => {
 
     await helloButton.click()
 })
+
+test('opens sidebar and nested popover with manual scroll', async ({page}) => {
+    await page.setViewportSize({width: 1280, height: 400});
+    await page.goto('/')
+
+    await page.getByRole('button', {name: 'Open Sidebar'}).click()
+
+    const nestedTrigger = page.getByRole('button', {name: 'Open anchored popover'})
+    await expect(nestedTrigger).toBeVisible()
+
+    await nestedTrigger.click()
+
+    const helloButton = page.getByRole('button', {name: 'Hello 5'})
+    await expect(helloButton).toBeVisible()
+
+    await nestedTrigger.hover();
+    await page.mouse.wheel(0, 100);
+
+    await helloButton.click()
+})
