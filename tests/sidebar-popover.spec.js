@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test'
 
 test('opens sidebar and nested popover', async ({page}) => {
-    await page.setViewportSize({width: 1280, height: 500});
+    await page.setViewportSize({width: 1280, height: 400});
     await page.goto('/')
 
     await page.getByRole('button', {name: 'Open Sidebar'}).click()
