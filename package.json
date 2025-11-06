@@ -10,7 +10,7 @@
     "test:e2e": "playwright test"
   },
   "devDependencies": {
-    "@playwright/test": "^1.56.1",
-    "vite": "^7.1.7"
+    "@playwright/test": "1.56.1",
+    "vite": "7.2.1"
   }
 }
