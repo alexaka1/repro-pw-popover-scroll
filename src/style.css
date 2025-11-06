@@ -101,6 +101,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  anchor-scope: --nested-popover-trigger;
 }
 
 .sidebar-inner h2 {
@@ -132,8 +133,11 @@ button:focus-visible {
 
 .nested-popover:popover-open {
   position-anchor: --nested-popover-trigger;
-  inset-area: block-end;
-  margin-block-start: 0.75rem;
+  position: fixed;
+  top: anchor(bottom);
+  left: anchor(center);
+  translate: -50% 0;
+  margin-top: 0.75rem;
   display: grid;
   justify-items: start;
   gap: 0.75rem;
