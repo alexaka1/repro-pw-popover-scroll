@@ -16,7 +16,7 @@ test('opens sidebar and nested popover', async ({page}) => {
 
     // await helloButton.scrollIntoViewIfNeeded(); // <-- this doesn't do anything either
 
-    await helloButton.click()
+    await helloButton.click({timeout: 5000})
 })
 
 test('opens sidebar and nested popover with manual scroll', async ({page}) => {
